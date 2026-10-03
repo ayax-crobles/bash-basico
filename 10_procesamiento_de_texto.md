@@ -128,7 +128,8 @@ Línea 5
 
 - Muestra las últimas líneas de un archivo.  
 - Por defecto muestra 10 líneas, pero se puede ajustar con `-n`.  
-- Con la opción `-f`, sigue mostrando nuevas líneas en tiempo real (muy usado para logs).  
+- Con la opción `-f`, sigue mostrando nuevas líneas en tiempo real (muy usado
+  para logs).  
 
 **Ejemplo 1: Últimas 10 líneas**
 
@@ -153,7 +154,8 @@ tail -f log.txt
 
 **Resultado esperado:**
 
-Se muestran las últimas líneas del archivo y se actualizan automáticamente cuando se agregan nuevas entradas.
+Se muestran las últimas líneas del archivo y se actualizan automáticamente
+cuando se agregan nuevas entradas.
 
 ---
 
@@ -209,7 +211,8 @@ texto plano.
 **Teoría:**
 
 - Permite seleccionar partes específicas de cada línea de un archivo.  
-- Se puede usar con delimitadores (`-d`) para dividir por campos, o con posiciones de caracteres (`-c`).  
+- Se puede usar con delimitadores (`-d`) para dividir por campos, o con
+  posiciones de caracteres (`-c`).  
 
 **Ejemplo 1: Extraer la primera columna de un CSV**
 
@@ -479,7 +482,8 @@ Unix/Linux.
 - Procesa texto línea por línea.  
 - Se usa para reemplazar, eliminar o insertar contenido.  
 - Sintaxis básica: `sed 's/patrón/reemplazo/' archivo`.  
-- Por defecto muestra el resultado en pantalla; con `-i` modifica directamente el archivo.  
+- Por defecto muestra el resultado en pantalla; con `-i` modifica directamente
+  el archivo.  
 
 **Ejemplo 1: Reemplazar texto simple**
 
@@ -645,7 +649,8 @@ diff archivo1.txt archivo2.txt
 
 Interpretación:
 
-- En la línea 1, `archivo1.txt` tiene “Hola mundo” y `archivo2.txt` tiene “Hola Linux”.
+- En la línea 1, `archivo1.txt` tiene “Hola mundo” y `archivo2.txt` tiene “Hola
+  Linux”.
 
 **Ejemplo 2: Usar formato unificado**
 
@@ -663,7 +668,8 @@ diff -u archivo1.txt archivo2.txt
 +Hola Linux
 ```
 
-El formato unificado es más legible y se usa mucho en control de versiones (ejemplo: Git).
+El formato unificado es más legible y se usa mucho en control de versiones
+(ejemplo: Git).
 
 ---
 
@@ -787,7 +793,10 @@ sistemas Unix/Linux.
 
 ### Introducción
 
-Además de visualizar, transformar y comparar, Unix/Linux ofrece comandos para **extraer información especial** de archivos y para **dividir o unir datos**. Estos comandos son útiles en situaciones específicas: analizar binarios, manejar archivos grandes o combinar listas basadas en campos.
+Además de visualizar, transformar y comparar, Unix/Linux ofrece comandos para
+**extraer información especial** de archivos y para **dividir o unir datos**.
+Estos comandos son útiles en situaciones específicas: analizar binarios,
+manejar archivos grandes o combinar listas basadas en campos.
 
 ---
 
@@ -796,7 +805,8 @@ Además de visualizar, transformar y comparar, Unix/Linux ofrece comandos para *
 **Teoría:**
 
 - Busca secuencias de caracteres imprimibles dentro de archivos binarios.  
-- Muy usado para inspeccionar ejecutables y encontrar mensajes ocultos o cadenas de texto.  
+- Muy usado para inspeccionar ejecutables y encontrar mensajes ocultos
+  o cadenas de texto.  
 - No interpreta el binario, solo extrae texto reconocible.  
 
 **Ejemplo 1: Extraer texto de un ejecutable**
@@ -814,7 +824,8 @@ main
 Error: archivo no encontrado
 ```
 
-Interpretación: se muestran las primeras cadenas legibles encontradas en el binario.
+Interpretación: se muestran las primeras cadenas legibles encontradas en el
+binario.
 
 **Ejemplo 2: Buscar una palabra específica en un binario**
 
@@ -837,7 +848,8 @@ Error: conexión fallida
 
 - Divide un archivo en partes más pequeñas.  
 - Por defecto crea archivos de 1000 líneas cada uno.  
-- Opciones: `-b` para dividir por tamaño en bytes, `-l` para dividir por número de líneas.  
+- Opciones: `-b` para dividir por tamaño en bytes, `-l` para dividir por número
+  de líneas.  
 
 **Ejemplo 1: Dividir por líneas**
 
